@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#0a0c10; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a202c"/>
+      <stop offset="100%" stop-color="#121620"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bgGlow)"/>
+
+  <!-- Top Navigation / Title Bar -->
+  <rect x="0" y="0" width="1280" height="64" fill="#0f131a" stroke="#232936" stroke-width="1"/>
+  <circle cx="36" cy="32" r="14" fill="#ef4444"/>
+  <text x="36" y="37" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Z</text>
+  <text x="64" y="38" font-size="17" font-weight="700" fill="#f8fafc" letter-spacing="-0.3">Zomato Delivery Performance Analysis — Power BI Executive Dashboard</text>
+  <rect x="1080" y="18" width="160" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1160" y="37" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">Dataset: 45,584 Orders</text>
+
+  <!-- 4 KPI Cards Header -->
+  <!-- Card 1 -->
+  <rect x="40" y="88" width="280" height="96" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="64" y="118" font-size="12" font-weight="600" fill="#94a3b8" text-transform="uppercase" letter-spacing="0.5">Total Orders</text>
+  <text x="64" y="156" font-size="30" font-weight="800" fill="#ffffff">45,584</text>
+  <rect x="250" y="104" width="46" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="273" y="119" font-size="10" font-weight="700" fill="#60a5fa" text-anchor="middle">100%</text>
+
+  <!-- Card 2 -->
+  <rect x="340" y="88" width="280" height="96" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="364" y="118" font-size="12" font-weight="600" fill="#94a3b8" text-transform="uppercase" letter-spacing="0.5">Average Delivery Time</text>
+  <text x="364" y="156" font-size="30" font-weight="800" fill="#ffffff">26.29 <tspan font-size="16" font-weight="500" fill="#94a3b8">min</tspan></text>
+  <rect x="548" y="104" width="48" height="22" rx="4" fill="#2e2b14"/>
+  <text x="572" y="119" font-size="10" font-weight="700" fill="#facc15" text-anchor="middle">Mean</text>
+
+  <!-- Card 3 -->
+  <rect x="640" y="88" width="280" height="96" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="64" y="118" font-size="12" font-weight="600" fill="#94a3b8" text-transform="uppercase" letter-spacing="0.5" transform="translate(600, 0)">Fastest Delivery</text>
+  <text x="664" y="156" font-size="30" font-weight="800" fill="#34d399">10 <tspan font-size="16" font-weight="500" fill="#94a3b8">min</tspan></text>
+  <rect x="850" y="104" width="46" height="22" rx="4" fill="#064e3b"/>
+  <text x="873" y="119" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle">Min</text>
+
+  <!-- Card 4 -->
+  <rect x="940" y="88" width="300" height="96" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="964" y="118" font-size="12" font-weight="600" fill="#94a3b8" text-transform="uppercase" letter-spacing="0.5">Slowest Delivery</text>
+  <text x="964" y="156" font-size="30" font-weight="800" fill="#f87171">54 <tspan font-size="16" font-weight="500" fill="#94a3b8">min</tspan></text>
+  <rect x="1170" y="104" width="46" height="22" rx="4" fill="#4c0519"/>
+  <text x="1193" y="119" font-size="10" font-weight="700" fill="#f87171" text-anchor="middle">Max</text>
+
+  <!-- Left Main Panel: Traffic & Multiple Deliveries -->
+  <rect x="40" y="208" width="580" height="472" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="64" y="240" font-size="15" font-weight="700" fill="#f8fafc">Average Delivery Time by Traffic Density</text>
+  <text x="64" y="258" font-size="12" fill="#64748b">Empirical pattern across road traffic density categories</text>
+
+  <!-- Bar 1: Jam -->
+  <text x="64" y="296" font-size="13" font-weight="600" fill="#cbd5e1">Jam</text>
+  <rect x="140" y="282" width="380" height="20" rx="4" fill="#ef4444"/>
+  <text x="532" y="297" font-size="12" font-weight="700" fill="#f8fafc">31.18 min</text>
+
+  <!-- Bar 2: High -->
+  <text x="64" y="334" font-size="13" font-weight="600" fill="#cbd5e1">High</text>
+  <rect x="140" y="320" width="332" height="20" rx="4" fill="#f97316"/>
+  <text x="484" y="335" font-size="12" font-weight="700" fill="#f8fafc">27.24 min</text>
+
+  <!-- Bar 3: Medium -->
+  <text x="64" y="372" font-size="13" font-weight="600" fill="#cbd5e1">Medium</text>
+  <rect x="140" y="358" width="325" height="20" rx="4" fill="#eab308"/>
+  <text x="477" y="373" font-size="12" font-weight="700" fill="#f8fafc">26.70 min</text>
+
+  <!-- Bar 4: Low -->
+  <text x="64" y="410" font-size="13" font-weight="600" fill="#cbd5e1">Low</text>
+  <rect x="140" y="396" width="261" height="20" rx="4" fill="#10b981"/>
+  <text x="413" y="411" font-size="12" font-weight="700" fill="#f8fafc">21.46 min</text>
+
+  <!-- Sub-section: Multiple Deliveries -->
+  <line x1="64" y1="448" x2="596" y2="448" stroke="#273142" stroke-width="1"/>
+  <text x="64" y="478" font-size="15" font-weight="700" fill="#f8fafc">Delivery Time vs. Multiple Deliveries Assigned</text>
+  <text x="64" y="496" font-size="12" fill="#64748b">Batch fulfillment pattern per delivery partner</text>
+
+  <!-- Delivery 0 -->
+  <text x="64" y="534" font-size="13" font-weight="600" fill="#cbd5e1">0 Drops</text>
+  <rect x="140" y="520" width="230" height="18" rx="4" fill="#3b82f6"/>
+  <text x="382" y="534" font-size="12" font-weight="700" fill="#f8fafc">22.88 min</text>
+
+  <!-- Delivery 1 -->
+  <text x="64" y="568" font-size="13" font-weight="600" fill="#cbd5e1">1 Drop</text>
+  <rect x="140" y="554" width="268" height="18" rx="4" fill="#3b82f6"/>
+  <text x="420" y="568" font-size="12" font-weight="700" fill="#f8fafc">26.72 min</text>
+
+  <!-- Delivery 2 -->
+  <text x="64" y="602" font-size="13" font-weight="600" fill="#cbd5e1">2 Drops</text>
+  <rect x="140" y="588" width="406" height="18" rx="4" fill="#a855f7"/>
+  <text x="558" y="602" font-size="12" font-weight="700" fill="#f8fafc">40.45 min</text>
+
+  <!-- Delivery 3 -->
+  <text x="64" y="636" font-size="13" font-weight="600" fill="#cbd5e1">3 Drops</text>
+  <rect x="140" y="622" width="478" height="18" rx="4" fill="#ec4899"/>
+  <text x="628" y="636" font-size="12" font-weight="700" fill="#f8fafc">47.82 min</text>
+
+  <!-- Right Main Panel: Weather Conditions & Pipeline -->
+  <rect x="640" y="208" width="600" height="472" rx="10" fill="url(#cardGrad)" stroke="#273142" stroke-width="1"/>
+  <text x="664" y="240" font-size="15" font-weight="700" fill="#f8fafc">Average Delivery Time by Weather Condition</text>
+  <text x="664" y="258" font-size="12" fill="#64748b">Meteorological factors and observed delivery durations</text>
+
+  <!-- Weather Rows -->
+  <g transform="translate(664, 280)">
+    <!-- Cloudy -->
+    <text x="0" y="16" font-size="13" font-weight="600" fill="#cbd5e1">Cloudy</text>
+    <rect x="110" y="2" width="370" height="18" rx="4" fill="#64748b"/>
+    <text x="492" y="16" font-size="12" font-weight="700" fill="#f8fafc">28.92 min</text>
+
+    <!-- Fog -->
+    <text x="0" y="48" font-size="13" font-weight="600" fill="#cbd5e1">Fog</text>
+    <rect x="110" y="34" width="368" height="18" rx="4" fill="#475569"/>
+    <text x="490" y="48" font-size="12" font-weight="700" fill="#f8fafc">28.74 min</text>
+
+    <!-- Windy -->
+    <text x="0" y="80" font-size="13" font-weight="600" fill="#cbd5e1">Windy</text>
+    <rect x="110" y="66" width="334" height="18" rx="4" fill="#0284c7"/>
+    <text x="456" y="80" font-size="12" font-weight="700" fill="#f8fafc">26.12 min</text>
+
+    <!-- Sandstorms -->
+    <text x="0" y="112" font-size="13" font-weight="600" fill="#cbd5e1">Sandstorms</text>
+    <rect x="110" y="98" width="331" height="18" rx="4" fill="#d97706"/>
+    <text x="453" y="112" font-size="12" font-weight="700" fill="#f8fafc">25.88 min</text>
+
+    <!-- Stormy -->
+    <text x="0" y="144" font-size="13" font-weight="600" fill="#cbd5e1">Stormy</text>
+    <rect x="110" y="130" width="331" height="18" rx="4" fill="#7c3aed"/>
+    <text x="453" y="144" font-size="12" font-weight="700" fill="#f8fafc">25.87 min</text>
+
+    <!-- Sunny -->
+    <text x="0" y="176" font-size="13" font-weight="600" fill="#cbd5e1">Sunny</text>
+    <rect x="110" y="162" width="280" height="18" rx="4" fill="#eab308"/>
+    <text x="402" y="176" font-size="12" font-weight="700" fill="#f8fafc">21.86 min</text>
+  </g>
+
+  <!-- Tech Pipeline Banner -->
+  <line x1="664" y1="492" x2="1216" y2="492" stroke="#273142" stroke-width="1"/>
+  <text x="664" y="522" font-size="14" font-weight="700" fill="#f8fafc">End-to-End Analytics Pipeline</text>
+  <g transform="translate(664, 540)">
+    <rect x="0" y="0" width="96" height="54" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="48" y="24" font-size="11" font-weight="700" fill="#60a5fa" text-anchor="middle">Python</text>
+    <text x="48" y="40" font-size="9" fill="#94a3b8" text-anchor="middle">Pandas / NumPy</text>
+
+    <text x="108" y="32" font-size="16" fill="#64748b">→</text>
+
+    <rect x="126" y="0" width="112" height="54" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="182" y="24" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">Data Prep</text>
+    <text x="182" y="40" font-size="9" fill="#94a3b8" text-anchor="middle">Mode Imputation</text>
+
+    <text x="248" y="32" font-size="16" fill="#64748b">→</text>
+
+    <rect x="266" y="0" width="104" height="54" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="318" y="24" font-size="11" font-weight="700" fill="#f59e0b" text-anchor="middle">MySQL</text>
+    <text x="318" y="40" font-size="9" fill="#94a3b8" text-anchor="middle">Group By Queries</text>
+
+    <text x="380" y="32" font-size="16" fill="#64748b">→</text>
+
+    <rect x="398" y="0" width="140" height="54" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="468" y="24" font-size="11" font-weight="700" fill="#fbbf24" text-anchor="middle">Power BI</text>
+    <text x="468" y="40" font-size="9" fill="#94a3b8" text-anchor="middle">Interactive Dashboard</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="664" y="640" font-size="11" fill="#64748b" font-style="italic">Dashboard Preview representation • Replace with PNG screenshot at /dashboard-preview.png</text>
+</svg>
